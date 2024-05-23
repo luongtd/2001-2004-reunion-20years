@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Câu trả lời hài hước</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .answer {
-            font-size: 24px;
-            color: #333;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-        <div class="answer" id="answer"></div>
-        <button onclick="showRandomAnswer()">Xem câu trả lời khác</button>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">Niên khóa 2001 - 2004</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> -->
+                <li class="nav-item"><a href="#" class="nav-link"><span class="badge text-bg-primary rounded-pill">A1</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="badge text-bg-secondary rounded-pill">A2</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="badge text-bg-success rounded-pill">A3</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="badge text-bg-danger rounded-pill">A4</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="badge text-bg-warning rounded-pill">A5</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="badge text-bg-info rounded-pill">A6</span></a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 text-center">
+            <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T2077A1PA4341PT17X33Y50D1012908948W24934H20990/views/1,width=500,height=500,appearanceId=1,backgroundColor=FFFFFF,noPt=true/funny-meme-face-mens-tri-blend-organic-t-shirt.jpg" class="img-fluid rounded" alt="Niên khóa 2001 - 2004" /><br><br>
+            <h2 id="answer"></h2>
+        </div>
+        <br>
+        <button class="btn btn-primary float-end" onclick="showRandomAnswer()">Xem đáp án khác</button>
     </div>
 
     <script>
@@ -61,7 +65,15 @@
             "Giờ thì sống vui vẻ thôi, không cần đáp án.",
             "Đáp án là hãy tận hưởng buổi họp lớp.",
             "Kỷ niệm đẹp hơn đáp án nhiều.",
-            "Bạn đã vượt qua tất cả, cần gì đáp án."
+            "Bạn đã vượt qua tất cả, cần gì đáp án.",
+            "Đáp án nằm ở đáy chai bia, chúc bạn may mắn!",
+            "Giờ chỉ cần xem lại album ảnh thôi.",
+            "Đáp án quan trọng bằng tình bạn sao?",
+            "Nếu đã quên, thì cũng không cần nhớ lại làm gì.",
+            "Bạn đã có gia đình, cần gì đáp án nữa.",
+            "Giờ đáp án là cứ vui vẻ mà sống thôi.",
+            "Trí nhớ của bạn đã lưu giữ kỷ niệm, không phải đáp án.",
+            "Hãy tận hưởng thời gian với bạn cũ, không cần đáp án."
         ];
 
         function showRandomAnswer() {
