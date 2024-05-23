@@ -9,10 +9,9 @@
 <body>
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                <span class="fs-4">Niên khóa 2001 - 2004</span>
-            </a>
+            <h1 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <a href="/">Niên khóa 2001 - 2004</a>
+            </h1>
 
             <ul class="nav nav-pills">
                 <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> -->
@@ -29,23 +28,22 @@
     <div class="container">
         <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 text-center">
             <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T2077A1PA4341PT17X33Y50D1012908948W24934H20990/views/1,width=500,height=500,appearanceId=1,backgroundColor=FFFFFF,noPt=true/funny-meme-face-mens-tri-blend-organic-t-shirt.jpg" class="img-fluid rounded" alt="Niên khóa 2001 - 2004" /><br><br>
-            <h2 id="answer"></h2>
+            <h2><b id="answer"></b></h2>
         </div>
         <br>
-        <button class="btn btn-primary float-end" onclick="showRandomAnswer()">Xem đáp án khác</button>
+        <button class="btn btn-success float-end" onclick="showRandomAnswer()">Xem đáp án khác</button>
     </div>
 
     <script>
         const answers = [
             "Năm nay 38 tuổi rồi, bạn còn cần đáp án làm gì?",
             "Dù có xem đáp án bạn cũng không hiểu đâu.",
-            "Thời gian qua nhanh quá, phải không?",
             "Cứ vui chơi thôi, quên bài kiểm tra đi!",
             "Đáp án à? Để sau tiệc lớp đã nhé!",
             "Bây giờ bạn đã thành công rồi, cần gì đáp án nữa.",
             "Ngày xưa thi cử, giờ thì chỉ cần vui vẻ.",
             "Hồi đó cần đáp án, giờ cần nụ cười.",
-            "Câu trả lời cho tất cả là: cứ tận hưởng cuộc sống!",
+            "Câu trả lời là: cứ tận hưởng cuộc sống đi bạn êi!",
             "Giờ bạn đã có kinh nghiệm sống, không cần đáp án nữa.",
             "Trí nhớ không tốt thì đáp án cũng vô ích thôi.",
             "Hỏi Google đi, nhưng không chắc tìm được đâu.",
@@ -73,7 +71,8 @@
             "Bạn đã có gia đình, cần gì đáp án nữa.",
             "Giờ đáp án là cứ vui vẻ mà sống thôi.",
             "Trí nhớ của bạn đã lưu giữ kỷ niệm, không phải đáp án.",
-            "Hãy tận hưởng thời gian với bạn cũ, không cần đáp án."
+            "Hãy tận hưởng thời gian với bạn cũ, không cần đáp án.",
+            "Đừng để lộ ra ngày xưa mình bị điểm thấp"
         ];
 
         function showRandomAnswer() {
