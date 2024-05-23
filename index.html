@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu trả lời hài hước</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .answer {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="answer" id="answer"></div>
+        <button onclick="showRandomAnswer()">Xem câu trả lời khác</button>
+    </div>
+
+    <script>
+        const answers = [
+            "Năm nay 38 tuổi rồi, bạn còn cần đáp án làm gì?",
+            "Dù có xem đáp án bạn cũng không hiểu đâu.",
+            "Thời gian qua nhanh quá, phải không?",
+            "Cứ vui chơi thôi, quên bài kiểm tra đi!",
+            "Đáp án à? Để sau tiệc lớp đã nhé!",
+            "Bây giờ bạn đã thành công rồi, cần gì đáp án nữa.",
+            "Ngày xưa thi cử, giờ thì chỉ cần vui vẻ.",
+            "Hồi đó cần đáp án, giờ cần nụ cười.",
+            "Câu trả lời cho tất cả là: cứ tận hưởng cuộc sống!",
+            "Giờ bạn đã có kinh nghiệm sống, không cần đáp án nữa.",
+            "Trí nhớ không tốt thì đáp án cũng vô ích thôi.",
+            "Hỏi Google đi, nhưng không chắc tìm được đâu.",
+            "Đáp án nằm trong lòng bạn, tìm lại kỷ niệm đi.",
+            "Ngày xưa lo học, giờ lo ăn chơi.",
+            "Bạn đã trưởng thành rồi, cần gì đáp án cũ.",
+            "Câu trả lời? Vui chơi cùng bạn cũ là đủ rồi.",
+            "Bây giờ là lúc để ôn lại kỷ niệm chứ không phải đáp án.",
+            "Đáp án đó giờ đã lỗi thời rồi.",
+            "Hồi đó cần đáp án, giờ cần niềm vui.",
+            "Năm nay là để hội ngộ, không phải để học.",
+            "Kỷ niệm quan trọng hơn đáp án.",
+            "Bây giờ chỉ cần tiếng cười thôi.",
+            "Giải đề thi không quan trọng bằng giải trí.",
+            "Đáp án? Tìm lại những kỷ niệm vui đi.",
+            "Câu trả lời là bạn đã thành công rồi.",
+            "Giờ thì sống vui vẻ thôi, không cần đáp án.",
+            "Đáp án là hãy tận hưởng buổi họp lớp.",
+            "Kỷ niệm đẹp hơn đáp án nhiều.",
+            "Bạn đã vượt qua tất cả, cần gì đáp án."
+        ];
+
+        function showRandomAnswer() {
+            const randomIndex = Math.floor(Math.random() * answers.length);
+            document.getElementById('answer').innerText = answers[randomIndex];
+        }
+
+        // Hiển thị câu trả lời ngẫu nhiên khi tải trang
+        window.onload = showRandomAnswer;
+    </script>
+</body>
+</html>
